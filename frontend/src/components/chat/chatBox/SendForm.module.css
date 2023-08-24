@@ -1,0 +1,30 @@
+.textInputWrapper {
+    margin-top: 5px;
+    border-radius: 11px;
+    border: 1px groove var(--color-dark-green);
+    padding: 5px 0;
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.textInput {
+    width: 90%;
+    display: block;
+    height: inherit;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    margin: 0 auto;
+    color: var(--color-mid-green);
+}
+
+.textInput::placeholder {
+    color: var(--color-dark-green);
+}
+
+.textInput:focus {
+    outline: none;
+    background: transparent;
+}

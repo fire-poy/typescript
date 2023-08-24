@@ -1,0 +1,60 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --color-black: #1b2223;
+    --color-dark-green: #027368;
+    --color-mid-green: #04bfad;
+    --color-light-green: #73d9cf;
+    --color-white: #f4fefd;
+    --color-purple: #aa6ec9;
+    --color-black-transparent: #091522a4;
+    --color-black-grey: rgba(140, 140, 140, 100);
+
+    --size-picture-profile: 50px;
+    --size-icon: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url('assets/bg/space.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Inter';
+    color: #fff;
+    font-size: 45px;
+}

@@ -1,0 +1,12 @@
+.container {
+    max-height: 85%;
+    scroll-behavior: auto contain;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+    /* Chrome */
+    display: none;
+}

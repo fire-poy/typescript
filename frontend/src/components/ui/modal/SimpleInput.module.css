@@ -1,0 +1,97 @@
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: calc(50% - 15rem);
+    width: 30rem;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.header {
+    background: var(--color-purple);
+    padding: 1rem;
+}
+
+.header h2 {
+    margin: 0;
+    color: white;
+}
+
+.formControl input,
+.formControl select {
+    margin: 1rem;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    min-width: 90%;
+    background-color: #e0d4fd;
+    color: var(--color-black);
+}
+
+.formControl input:focus {
+    outline: none;
+    border-color: #240370;
+}
+
+.control-group {
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.control-group .formControl {
+    min-width: 15rem;
+    flex: 1;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.formActions {
+    text-align: right;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+}
+
+.error-text {
+    color: #b40e0e;
+}
+
+.confirmBtn {
+    background: var(--color-light-green);
+    color: white;
+}
+
+.confirmBtn:hover {
+    background: var(--color-mid-green);
+}
+
+.cancelBtn {
+    background: rgb(222, 200, 200);
+    color: var(--color-black);
+}
+
+.cancelBtn:hover {
+    background: rgb(189, 133, 133);
+}
+
+.error {
+    color: #b40e0e;
+    text-align: center;
+    margin-bottom: 1rem;
+}

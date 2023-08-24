@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 275px;
+}
+
+.profilePicture {
+    margin: 0.5rem;
+    width: var(--size-picture-profile);
+    height: var(--size-picture-profile);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    border: 1.5px solid var(--color-white);
+    border-radius: 50%;
+}
+
+.profilePicture:hover {
+    box-shadow: 0 0 30px 5px var(--color-light-green);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.verticalList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.2rem;
+}
+
+.verticalList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

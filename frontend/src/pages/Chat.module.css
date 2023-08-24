@@ -1,0 +1,23 @@
+.chatContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    width: 90vw;
+    height: 80vh;
+    min-height: 500px;
+    margin: 0 auto;
+    border-radius: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+    .chatContainer {
+        flex-direction: column;
+        min-height: 95rem;
+        max-width: 95vw;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+}

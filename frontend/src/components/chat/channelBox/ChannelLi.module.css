@@ -1,0 +1,38 @@
+li {
+    list-style-type: none;
+}
+
+.li {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0.5rem auto;
+    padding: 0.3rem;
+    border: 1px solid var(--color-mid-green);
+    border-radius: 44px;
+}
+
+.active {
+    background-color: var(--color-mid-green);
+}
+
+.text {
+    cursor: pointer;
+}
+
+.addChannelIcon {
+    width: var(--size-icon);
+    height: var(--size-icon);
+    transform: scale(70%);
+    cursor: pointer;
+}
+
+.privateIcon {
+    width: var(--size-icon);
+    height: var(--size-icon);
+    cursor: pointer;
+}
+
+.iconsContainer {
+    display: flex;
+}

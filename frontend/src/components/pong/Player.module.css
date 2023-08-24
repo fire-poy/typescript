@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profilePicture {
+    margin: 0.5rem;
+    width: var(--size-picture-profile);
+    height: var(--size-picture-profile);
+
+    border: 1.5px solid var(--color-white);
+    filter: drop-shadow(0px -4px 16px var(--color-black));
+    border-radius: 50%;
+}

@@ -1,0 +1,30 @@
+= Cosmic pong
+
+Final project of the common core of school 42
+
+== Technologies
+
+* https://react.dev/[React] + https://vitejs.dev/[ViteJS]
+* https://nestjs.com/[NestJS]
+* https://www.docker.com/[Docker]
+* https://typeorm.io/[TypeORM]
+* https://www.typescriptlang.org/[TypeScript]
+
+== Contributors
+
+[cols="1,1,1,1,1"]
+|===
+
+| https://github.com/RobinBurri[RobinBurri]
+| https://github.com/t-h2o[t-h2o]
+| https://github.com/eprei[eprei]
+| https://github.com/shaolin-peanut[shaolin-peanut]
+| https://github.com/fire-poy[fire-poy]
+
+| image:https://avatars.githubusercontent.com/u/68509729[RobinBurri, 100, link="https://github.com/RobinBurri"]
+| image:https://avatars.githubusercontent.com/u/90759286[t-h2o, 100, link="https://github.com/t-h2o"]
+| image:https://avatars.githubusercontent.com/u/93380002[eprei, 100, link="https://github.com/eprei"]
+| image:https://avatars.githubusercontent.com/u/88668425[shaolin-peanut, 100, link="https://github.com/shaolin-peanut"]
+| image:https://avatars.githubusercontent.com/u/99355290[fire-poy, 100, link="https://github.com/fire-poy"]
+
+|===

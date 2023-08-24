@@ -1,0 +1,29 @@
+.channelbox {
+    flex: 0 0 18rem;
+    margin-right: 1rem;
+    height: inherit;
+    border-radius: 10px;
+    border: 1px solid #3a3a42;
+    background: var(--color-black-transparent);
+    opacity: 100;
+    overflow: hidden;
+    scroll-behavior: auto contain;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.channelbox::-webkit-scrollbar {
+    /* Chrome */
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .channelbox {
+        flex: none;
+        width: 25rem;
+        max-width: 95vw;
+        margin-right: 0;
+        height: 25rem;
+    }
+}

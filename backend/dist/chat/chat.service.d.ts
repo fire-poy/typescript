@@ -1,0 +1,38 @@
+import { CreateMessageDto } from './dto/create-message.dto';
+import { CreateChannelDto } from './dto/create-channel.dto';
+import { Message } from 'src/typeorm/message.entity';
+import { Channel } from 'src/typeorm/channel.entity';
+import { User } from 'src/typeorm/user.entity';
+import { ChannelUserMuted } from 'src/typeorm/channel-user-muted.entity';
+import { Repository } from 'typeorm';
+export declare class ChatService {
+    private readonly messageRepository;
+    private readonly channelRepository;
+    private readonly userRepository;
+    private readonly channelUserMutedRepository;
+    constructor(messageRepository: Repository<Message>, channelRepository: Repository<Channel>, userRepository: Repository<User>, channelUserMutedRepository: Repository<ChannelUserMuted>);
+    newMsg(createMessageDto: CreateMessageDto): Promise<Message>;
+    findOneToDisplay(id: number): Promise<Message>;
+    findAllMsgByChannel(channelId: number): Promise<Message[]>;
+    findUsersByChannel(id: number): Promise<Channel>;
+    blockUser(userId: number, targetId: number): Promise<void>;
+    unblockUser(myId: number, hisId: number): Promise<void>;
+    getBlockedUsers(myId: number): Promise<number[]>;
+    isBlockedBy(myId: number, targetId: number): Promise<boolean>;
+    setAdmin(userId: number, targetId: number, channelId: number): Promise<void>;
+    unsetAdmin(userId: number, targetId: number, channelId: number): Promise<void>;
+    kickUser(userId: number, targetId: number, channelId: number): Promise<void>;
+    banUser(userId: number, targetId: number, channelId: number): Promise<void>;
+    unbanUser(userId: number, targetId: number, channelId: number): Promise<void>;
+    getBannedUsers(channelId: number): Promise<number[]>;
+    muteUser(userId: number, targetId: number, channelId: number): Promise<void>;
+    getMutedUsers(channelId: number): Promise<number[]>;
+    createChannel(createChannelDto: CreateChannelDto): Promise<Channel>;
+    getAllChannels(): Promise<Channel[]>;
+    joinChannel(channelId: number, userId: number, password: string): Promise<Channel>;
+    leaveChannel(channelId: number, userId: number): Promise<Channel>;
+    findChanDM(userId: number, TargetId: number): Promise<Channel>;
+    createChanDM(userId: number, TargetId: number): Promise<Channel>;
+    deleteChannel(channelId: number, userId: number): Promise<Channel>;
+    changePassword(channelId: number, PlainTextPassword: string): Promise<boolean>;
+}

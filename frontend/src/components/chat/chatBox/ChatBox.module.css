@@ -1,0 +1,39 @@
+.chatBox {
+    flex: 1;
+    height: inherit;
+    border-radius: 10px;
+    border: 1px solid #3a3a42;
+    background: var(--color-black-transparent);
+    opacity: 100;
+    scroll-behavior: auto contain;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatBox::-webkit-scrollbar {
+    /* Chrome */
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .chatBox {
+        flex: none;
+        width: 25rem;
+        max-width: 95vw;
+        height: 40rem;
+        margin: 1rem 0;
+    }
+}
+
+.mutedText {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

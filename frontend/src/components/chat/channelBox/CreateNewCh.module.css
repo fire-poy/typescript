@@ -1,0 +1,29 @@
+.channelBox {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem 1.2rem;
+    width: 75%;
+    font-size: 17px;
+    font-weight: 700;
+    --hover-bg: var(--color-mid-green);
+    --hover-text: var(--color-black);
+    color: #fff;
+    transition: 0.4s;
+    background: var(--color-purple);
+    border-radius: 44px;
+    border: 1px solid #ffffff;
+}
+.btn:hover {
+    color: var(--hover-text);
+    transform: translate(+1rem);
+    background: var(--hover-bg);
+}

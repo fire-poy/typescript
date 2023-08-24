@@ -1,0 +1,30 @@
+.msgContainer {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.me {
+    justify-content: end;
+    margin-right: 20px;
+    color: var(--color-purple);
+}
+
+.they {
+    justify-content: start;
+    margin-left: 20px;
+    color: var(--color-mid-green);
+}
+
+.textContainer {
+    max-width: 70%;
+}
+
+.profilePicture {
+    width: var(--size-picture-profile);
+    height: var(--size-picture-profile);
+    border-radius: 50%;
+    transform: scale(60%);
+    object-fit: cover;
+}

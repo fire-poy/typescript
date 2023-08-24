@@ -1,0 +1,58 @@
+version: '3.8'
+services:
+    backend:
+        container_name: our-backend
+        image: our-backend-image
+        build:
+            context: ./backend/
+        ports:
+            - '8080:3000'
+        volumes:
+            - ./backend/:/app
+            - images:/app/profile-images
+        depends_on:
+            - postgres
+        environment:
+            - DATABASE_URL=${DATABASE_URL}
+            - PORT=${PORT}
+            - FT_UUID=${FT_UUID}
+            - FT_SECRET=${FT_SECRET}
+            - URL_BACKEND=http://localhost:8080
+            - URL_FRONTEND=http://localhost:4040
+        networks:
+            - appnet
+
+    frontend:
+        container_name: our-frontend
+        image: our-frontend-image
+        build:
+            context: ./frontend/
+        ports:
+            - '4040:5173'
+        volumes:
+            - ./frontend/:/app
+        stdin_open: true
+        tty: true
+
+    postgres:
+        container_name: our-postgresql
+        image: postgres:latest
+        ports:
+            - '6060:5432'
+        volumes:
+            - data:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_USER=${POSTGRES_USER}
+            - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+            - POSTGRES_DB=${POSTGRES_DB}
+        networks:
+            - appnet
+
+volumes:
+    data:
+      name: our-volume
+    images:
+      name: our-images
+
+networks:
+    appnet:
